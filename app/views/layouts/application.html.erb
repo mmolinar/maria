@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Maria</title>
+  <title>BLW en Español</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body data-pinterest-extension-installed="cr1.39.1">
+    <!--<div class="navbar-wrapper">-->
+      <div class="container">
+<!-- ================================ Header collapse menu using nav-pills ===========================-->
+        <div class="center-pills">
+          <ul class="nav nav-pills pull-right">
+            <li class="nav-text"><%= link_to "ABOUT", pages_about_path %></li>
+            <li class="nav-text"><%= link_to "LIBROS", pages_libros_path %></li>
+            <li class="nav-text"><%= link_to "TIENDA", pages_tienda_path %></li>
+            <li class="nav-text"><%= link_to "CONTACTO", pages_contacto_path%></li>
+            <!--<li class="nav-text"><= link_to "FOTOS", #%></li>-->
+          </ul>
+          <div id="siteTitle">
+            <a href="/"><h1>BLW en Español</h1></a> <!-- This is for the little "logo" next to AH -->
+          </div>
+        </div>
+<!-- ===================================== Regular Navbar =============================================== -->
+        <nav class="navbar navbar-default navbar-static-top">
+          <!--<div class="container">-->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav col-md-12">
+                <li class="active"><%= link_to "Inicio", root_path%></li>
+                  <li class="dropdown">
+                  <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Baby Led Weaning <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Definición", pages_definicion_path%></li>
+                    <li><%= link_to "Beneficios", pages_beneficios_path%></li>
+                    <li><%= link_to "Bebés de botella", pages_botella_path%></li>
+                    <li role="separator" class="divider"></li>
+                    <li><%= link_to "Consejos para todos", pages_consejos_para_todos_path%></li>
+                    <li><%= link_to "Cuando no hacer BLW", pages_cuando_no_path%></li>
+                    <li><%= link_to "Estudios y referencias", pages_estudios_y_referencias_path%></li>
+
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a  class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Cómo empezar? <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Edad y requisitos", pages_edad_path%></li>
+                    <li><%= link_to "Guía para comenzar", pages_guia_para_empezar_path%></li>
+                    <li><%= link_to "Tipo de comida", pages_tipo_path%></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seguridad <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Reglas de Seguridad", pages_seguridad_path%></li>
+                    <li><%= link_to "Ahogamiento", pages_ahogamiento_path%></li>
+                    <li><%= link_to "Primeros Auxilios", pages_primeros_auxilios_path%></li>
+                    <li><%= link_to "Alimentos a Evitar", pages_alimentos_peligrosos_path%></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nutrición <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Nutrición", pages_nutricion_path%></li>
+                    <li><%= link_to "Hierro", pages_hierro_path%></li>
+                    <li><%= link_to "Cantidades", pages_cantidades_path%></li>
+                    <li><%= link_to "Alergias", pages_alergias_path%></li>
+                  </ul>
+                </li>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg><span style="height: 20px; width: 40px; position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; background-image: url(&quot;data:image/png;base64,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&quot;); background-color: transparent; background-size: 40px 20px;"></span>
+<!-- ============== AddToAny Social Media Buttons BEGIN =================== -->
+<div class="container">
+  <!--<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="margin-left:-100px; top:150px;">-->
+    <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:0px; right:0px;">
+   <!-- <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:20px; top:150px;">
+      <!--<a class="a2a_dd" href="https://www.addtoany.com/share"></a>-->
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_pinterest"></a>
+      <a class="a2a_button_email"></a>
+    </div>
+  </div>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
 
 <%= yield %>
+
+<!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>© 2015 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
 
 </body>
 </html>
