@@ -44,52 +44,6 @@ Rails.application.routes.draw do
   get 'pages/tienda'
 
   get 'pages/tipo_de_comida_blw'
-
-  get 'about/ahogamiento'
-
-  get 'about/alergias'
-
-  get 'about/alimentos_peligrosos'
-
-  get 'about/beneficios_blw'
-
-  get 'about/botella'
-
-  get 'about/cantidades'
-
-  get 'about/consejos_para_todos'
-
-  get 'about/contacto'
-
-  get 'about/cuando_no_hacer_blw'
-
-  get 'about/definicion_blw'
-
-  get 'about/edad_para_empezar_blw'
-
-  get 'about/estudios_y_referencias'
-
-  get 'about/guia_para_empezar_blw'
-
-  get 'about/hierro'
-
-  get 'about/home'
-
-  get 'about/libros'
-
-  get 'about/nutricion'
-
-  get 'about/primeros_auxilios'
-
-  get 'about/reflejo_extrusion'
-
-  get 'about/reflejo_nauseoso'
-
-  get 'about/seguridad'
-
-  get 'about/tienda'
-
-  get 'about/tipo_de_comida_blw'
   
   root 'pages#home'
 
