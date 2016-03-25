@@ -1,49 +1,50 @@
 Rails.application.routes.draw do
-  get 'pages/about'
+  get 'pages/about' => 'pages#about'
 
-  get 'pages/ahogamiento'
+  get 'pages/ahogamiento' => 'pages#ahogamiento'
 
-  get 'pages/alergias'
+  get 'pages/alergias' => 'pages#alergias'
 
-  get 'pages/alimentos_peligrosos'
+  get 'pages/alimentos_peligrosos' => 'pages#alimentos_peligrosos'
 
-  get 'pages/beneficios_blw'
+  get 'pages/beneficios_blw' => 'pages#beneficios_blw'
 
-  get 'pages/botella'
+  get 'pages/botella' => 'pages#botella'
 
-  get 'pages/cantidades'
+  get 'pages/cantidades' => 'pages#cantidades'
 
-  get 'pages/consejos_para_todos'
+  get 'pages/consejos_para_todos' => 'pages#consejos_para_todos'
 
-  get 'pages/contacto'
+  get 'pages/contacto' => 'pages#contacto'
 
-  get 'pages/cuando_no_hacer_blw'
+  get 'pages/cuando_no_hacer_blw' => 'pages#cuando_no_hacer_blw'
 
-  get 'pages/definicion_blw'
+  get 'pages/definicion_blw' => 'pages#definicion_blw'
 
-  get 'pages/edad_para_empezar_blw'
+  get 'pages/edad_para_empezar_blw' => 'pages#edad_para_empezar_blw'
 
-  get 'pages/estudios_y_referencias'
+  get 'pages/estudios_y_referencias' => '
+  pages#estudios_y_referencias'
 
-  get 'pages/guia_para_empezar_blw'
+  get 'pages/guia_para_empezar_blw' => 'pages#guia_para_empezar_blw'
 
-  get 'pages/hierro'
+  get 'pages/hierro' => 'pages#hierro'
 
-  get 'pages/libros'
+  get 'pages/libros' => 'pages#libros'
 
-  get 'pages/nutricion'
+  get 'pages/nutricion' => 'pages#nutricion'
 
-  get 'pages/primeros_auxilios'
+  get 'pages/primeros_auxilios' => 'pages#primeros_auxilios'
 
-  get 'pages/reflejo_extrusion'
+  get 'pages/reflejo_extrusion' => 'pages#reflejo_extrusion'
 
-  get 'pages/reflejo_nauseoso'
+  get 'pages/reflejo_nauseoso' => 'pages#reflejo_nauseoso'
 
-  get 'pages/seguridad'
+  get 'pages/seguridad' => 'pages#seguridad'
 
-  get 'pages/tienda'
+  get 'pages/tienda' => 'pages#tienda'
 
-  get 'pages/tipo_de_comida_blw'
+  get 'pages/tipo_de_comida_blw' => 'pages#tipo_de_comida_blw'
   
   root 'pages#home'
 
