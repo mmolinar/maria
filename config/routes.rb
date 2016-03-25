@@ -23,8 +23,7 @@ Rails.application.routes.draw do
 
   get 'pages/edad_para_empezar_blw' => 'pages#edad_para_empezar_blw'
 
-  get 'pages/estudios_y_referencias' => '
-  pages#estudios_y_referencias'
+  get 'pages/estudios_y_referencias' => 'pages#estudios_y_referencias'
 
   get 'pages/guia_para_empezar_blw' => 'pages#guia_para_empezar_blw'
 
