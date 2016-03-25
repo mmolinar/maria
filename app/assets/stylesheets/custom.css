@@ -1,0 +1,237 @@
+.container .jumbotron p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-size: 1.7rem;
+  /*font-weight: 400;*/
+  line-height: 1.25;
+}
+
+/*h1 {
+    font-size: 40px;
+    font-size: 3.333rem;
+    color: #70548b;
+    font-family: 'PT Sans', sans-serif;
+}*/
+
+.jumbotron .entry-title{
+    font-size: 42px;
+    font-size: 4.3rem;
+    margin-bottom: 15px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 25px;
+}
+
+.jumbotron h2{
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-size: 3rem;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.entry-content {
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.navbar-default { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav a { 
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  /*color: #ffffff;*/
+}
+
+.nav-pills{
+  font-size: 16px;
+  font-size: 2rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  /*line-height: 1;
+  width: 100%;*/
+}
+
+#siteTitle a{
+  font-size: 32px;
+  font-size: 2.286rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #eb7200; /*orange  123*/
+  /*line-height: 1.2;*/
+}
+
+.nav-pills a:link, .nav-pills a:visited, .nav-pills a:hover, .nav-pills a:active{
+  color: #70548b; /*purple*/
+  font-weight: 700;
+}
+
+.navbar-links a{
+  color: #403A4E; /*gray*/
+  font-family: "Garamond", serif;
+}
+
+.col-md-7 .featurette-heading a:link, .col-md-7 .featurette-heading a:visited, .col-md-7 .featurette-heading a:hover, .col-md-7 .featurette-heading a:active{ 
+    text-decoration: none; 
+    color: #777;
+}
+
+#myCarousel a:link, #myCarousel a:visited, #myCarousel a:hover, #myCarousel a:active{ 
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+.col-lg-4 a:link, .col-lg-4 a:visited{ 
+    text-decoration: none; 
+    color: #777;
+}
+
+.col-lg-4 a:hover{ 
+  color: #337ab7;/*blue*/
+}
+  
+/*.col-lg-4 a:active{
+  
+}*/
+
+a:visited{
+  color: #eb7200; /*orange*/
+}
+
+a:hover{
+  color: #777;
+}
+
+a:active{
+  color: #777;
+}
+
+.onceUpon{
+  font-weight: bold;
+}
+
+.containerVid {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  /*padding-left: 80px;*/
+}
+
+#videoCarlosTed{
+  text-align: center;
+}
+/* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+@media screen and (max-width: 680px) {
+    .a2a_floating_style.a2a_vertical_style { display: none; }
+}
+
+@media screen and (min-width: 768px){
+.container .jumbotron .content{
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.container .jumbotron .content{
+    padding-bottom: 20px;
+    padding-left: 95px;
+    padding-right: 105px;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: left;
+}
+
+.container .jumbotron{
+  padding-top: 15px;
+}
+
+.container .list-group-item.active{
+  background-color: #70548b;
+  border-color: #70548b;
+}
+
+.quotes{
+  font-size: larger;
+}
+
+.container .content .quoteContent{
+  font-style: italic;
+}
+
+.img-responsive {
+ display: block;
+ height: auto;
+ max-width: 100%;
+}
+
+
+
+/*.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.42857143;
+  color: #45342a;
+}\
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777;
+}
+
+.btn-link {
+  font-weight: normal;
+  color: #337ab7;
+  border-radius: 0;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}*/
