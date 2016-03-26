@@ -6,6 +6,13 @@
   line-height: 1.25;
 }
 
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
 /*h1 {
     font-size: 40px;
     font-size: 3.333rem;
