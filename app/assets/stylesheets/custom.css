@@ -6,6 +6,11 @@
   line-height: 1.25;
 }
 
+.containter .navbar{
+  width: 100%;
+  background-color: #eeeeee;
+}
+
 .navbar {
     position: relative;
     min-height: 50px;
