@@ -39,6 +39,21 @@
     width: 100%;
 }
 
+/* Center Navabar */
+@media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+        background-color: #f8f8f8;
+    }
+}
+
+.cont .container{
+    background-color: #f8f8f8;    
+}
+
 .container{
     background: #ffffff;
 }
