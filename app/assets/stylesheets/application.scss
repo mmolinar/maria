@@ -45,6 +45,11 @@
     margin: 0 0 25px;
 }
 
+/*No space between Navbar and Carousel*/
+.navbar{
+  margin-bottom: 0px;
+}
+
 .jumbotron h2{
   font-weight: 700;
   line-height: 1.2;
@@ -88,9 +93,107 @@
   font-weight: 700;
 }
 
+/*Leer button stays white*/
+#myCarousel a:link, #myCarousel a:visited, #myCarousel a:hover, #myCarousel a:active{ 
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+/*View details in Marketing is gray*/
+.col-lg-4 a:link, .col-lg-4 a:visited{ 
+    text-decoration: none; 
+    color: #777;
+}
+
+/*View details in Marketing is blue when hover*/
+.col-lg-4 a:hover{ 
+  color: #337ab7;/*blue*/
+}
+
 
 /*Mute the second title of featurettes*/
 .col-md-7 .featurette-heading a:link, .col-md-7 .featurette-heading a:visited, .col-md-7 .featurette-heading a:hover, .col-md-7 .featurette-heading a:active{ 
     text-decoration: none; 
     color: #777;
 }
+
+a:visited{
+  color: #eb7200; /*orange*/
+}
+
+a:hover{
+  color: #777;
+}
+
+.onceUpon{
+  font-weight: bold;
+}
+
+.containerVid {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+#videoCarlosTed{
+  text-align: center;
+}
+
+/* Doesnt seem to work Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+@media screen and (max-width: 680px) {
+    .a2a_floating_style.a2a_vertical_style { display: none; }
+}
+
+/*Justifies content (nicely squared) */
+.container .jumbotron .content{
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: left;
+}
+
+.quoteContent{
+  font-style: italic;
+}
+
+.quotes{
+  font-size: 150%;
+}
+
+/* CUSTOMIZE THE CAROUSEL without this the carousel is deformed
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: none;
+  /*object-fit: contain;*/
+}
+
+.carousel-inner >.item{
+  height: none;
+}
+
+/*
+img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+}*/
+
+
