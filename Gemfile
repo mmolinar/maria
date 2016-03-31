@@ -8,8 +8,9 @@ gem 'sqlite3', group: [:development, :test]
 #Use postgresql as the database for production
 group :production do
     gem 'pg'
-    gem 'rails_12factor'
 end
+#For assets
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 #Use bootstrap library for style
