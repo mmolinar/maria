@@ -42,6 +42,8 @@ Rails.application.routes.draw do
   get 'pages/seguridad' => 'pages#seguridad'
 
   get 'pages/tienda' => 'pages#tienda'
+  
+  get 'pages/blw_tips' => 'pages#blw_tips'
 
   get 'pages/tipo_de_comida_blw' => 'pages#tipo_de_comida_blw'
   

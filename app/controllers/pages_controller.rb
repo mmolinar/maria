@@ -70,4 +70,7 @@ class PagesController < ApplicationController
 
   def tipo_de_comida_blw
   end
+  
+  def blw_tips
+  end
 end
