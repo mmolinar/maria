@@ -73,4 +73,7 @@ class PagesController < ApplicationController
   
   def blw_tips
   end
+  
+  def mitos_blw
+  end
 end
