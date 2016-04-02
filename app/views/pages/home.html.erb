@@ -96,7 +96,7 @@
 
     <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Vitamina C y Hierro. <span class="text-muted"><%= link_to "La combinación perfecta para evitar la anemia.", pages_beneficios_blw_path%></span></h2>
+            <h2 class="featurette-heading">Vitamina C y Hierro. <span class="text-muted"><%= link_to "La combinación perfecta para evitar la anemia.", pages_hierro_path%></span></h2>
             <p class="lead">La deficiencia de hierro disminuye la hemoglobina en la sangre y afecta el desarrollo cerebral. Los daños por anemia antes de los 2 años de edad son irreversibles. Para evitarla,
                 <%=link_to "introduce alimentos altos en hierro", pages_hierro_path%>
                 desde el principio y todos los días.</p>
@@ -111,12 +111,13 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">Olvida los purés y las papillas. <span class="text-muted">Hay otra manera de empezar.</span></h2>
-            <p class="lead">¿Pero qué no se va a ahogar?</p>
+            <h2 class="featurette-heading">Olvida los purés y las papillas. <span class="text-muted"><%= link_to "Hay otra manera de empezar.", pages_seguridad_path%></span></h2>
+            <p class="lead">¿Pero qué no se va a ahogar? Suele ser lo primero que la gente se pregunta
+            al leer que no se empieza por purés. El Dr. Carlos González lo explica muy bien en <%= link_to "este video práctico y conciso", pages_seguridad_path%>.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="https://lh3.googleusercontent.com/-pRqmye0tcoA/VvW5DTJOPbI/AAAAAAAAANc/7DaLMDcpSYYAJDZWp6E-cbgW-rH1LWb-ACCo/s500-Ic42/Quote%2Bcomida%2Bnormal.jpg"
-            data-holder-rendered="true">
+            <a href="/pages/seguridad"><img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="https://lh3.googleusercontent.com/-pRqmye0tcoA/VvW5DTJOPbI/AAAAAAAAANc/7DaLMDcpSYYAJDZWp6E-cbgW-rH1LWb-ACCo/s500-Ic42/Quote%2Bcomida%2Bnormal.jpg"
+            data-holder-rendered="true"></a>
         </div>
     </div>
 
