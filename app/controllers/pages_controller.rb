@@ -76,4 +76,7 @@ class PagesController < ApplicationController
   
   def mitos_blw
   end
+  
+  def recetas
+  end
 end
