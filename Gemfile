@@ -58,7 +58,7 @@ group :development do
   # Forms, mail {
   #gem 'mail_form', '~> 1.5', '>= 1.5.1'
   gem 'mail_form', '~> 1.5.0.rc'
-  gem 'simple_form', '~> 3.2', '>= 3.2.1'
+  gem 'simple_form', '~> 3.0.0.rc'
   # }
   # Development (Optional) {
   gem 'better_errors', group: :development
