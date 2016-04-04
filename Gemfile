@@ -53,5 +53,24 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
+  
+  #For contact form 
+  # Forms, mail {
+  #gem 'mail_form', '~> 1.5', '>= 1.5.1'
+  gem 'mail_form', '~> 1.5.0.rc'
+  gem 'simple_form', '~> 3.2', '>= 3.2.1'
+  # }
+  # Development (Optional) {
+  gem 'better_errors', group: :development
+  gem 'quiet_assets', group: :development
+  # }
+  # Development Guard {
+  group :production do
+    gem 'guard-rails', group: :development
+    gem 'guard-livereload', group: :development
+    gem 'rack-livereload', group: :development
+    gem 'guard-bundler', group: :development
+  end
+  # }
+  end
 
