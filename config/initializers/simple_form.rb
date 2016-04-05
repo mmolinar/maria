@@ -162,4 +162,7 @@ SimpleForm.setup do |config|
 
   # Defines which i18n scope will be used in Simple Form.
   # config.i18n_scope = 'simple_form'
+  
+  ruby config.label_class = 'col-lg-2 control-label' 
+  config.form_class = "simple_form form-horizontal"
 end
