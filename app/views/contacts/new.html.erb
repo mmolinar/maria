@@ -1,13 +1,31 @@
 <div class="container">
-  <h1>Contact</h1>
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => false, :input_html => {:rows => 10} %>
-    <div class="hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    <div class="jumbotron vertical-center">
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h1 class="entry-title">Contacto</h1>
+                    <div class="well">
+                        <%=f orm_for @contact do |f| %>
+                            <div class="form-group">
+                                <%=f .label :name %>
+                                    <%=f .text_field :name, class: 'form-control' %>
+                            </div>
+
+                            <div class="form-group">
+                                <%=f .label :email %>
+                                    <%=f .email_field :email, class: 'form-control' %>
+                            </div>
+
+                            <div class="form-group">
+                                <%=f .label :comments %>
+                                    <%=f .text_area :comments, class: 'form-control' %>
+                            </div>
+                            <%=f .submit 'Submit', class: 'btn btn-default' %>
+                                <% end %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="form-actions">
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
-    </div>
-    <% end %>
+</div>
