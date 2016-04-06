@@ -4,15 +4,21 @@ class ContactsController < ApplicationController
   end
   
   def create
-      @contact = Contact.new(contact_params)
+  @contact = Contact.new(contact_params)
   
-  if @contact.save
-    flash[:success] = 'Gracias por tu mensaje.'
-    redirect_to new_contact_path
-  else
-    flash[:danger] = 'Oops! ¿Te falto algo? Trata de nuevo.'
-    redirect_to new_contact_path
-  end
+    if @contact.save
+      name = params[:contact][:name]
+      email = params[:contact][:email]
+      body = params[:contact][:comments]
+    
+      ContactMailer.contact_email(name, email, body).deliver
+    
+      flash[:success] = 'Gracias por tu mensaje.'
+      redirect_to new_contact_path
+    else
+      flash[:danger] = 'Oops! ¿Te falto algo? Trata de nuevo.'
+      redirect_to new_contact_path\
+    end
   end
   
   private
