@@ -29,125 +29,125 @@
           <%=link_to "TIENDA", pages_tienda_path %>
         </li>
         <li class="nav-text">
-          <%= link_to "CONTACTO", new_contact_path %>
+          <%=link_to "CONTACTO", new_contact_path %>
         </li>
         </li>
         <!--<li class="nav-text"><= link_to "FOTOS", #%></li>-\\\\\\\\\->
       </ul>
         <!-- This is for the little "logo" next to AH -->
+    </div>
+  </div>
+  <!-- ===================================== Regular Navbar =============================================== -->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id='brand' href="/">BLW en Español</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <%=link_to "Inicio", root_path%>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Baby Led Weaning <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <%=link_to "Definición", pages_definicion_blw_path%>
+              </li>
+              <li>
+                <%=link_to "Beneficios", pages_beneficios_blw_path%>
+              </li>
+              <li>
+                <%=link_to "Bebés de botella", pages_botella_path%>
+              </li>
+              <li>
+                <%=link_to "Mitos de BLW", pages_mitos_blw_path%>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <%=link_to "Consejos para todos", pages_consejos_para_todos_path%>
+              </li>
+              <li>
+                <%=link_to "Cuando no hacer BLW", pages_cuando_no_hacer_blw_path%>
+              </li>
+              <li>
+                <%=link_to "Estudios y referencias", pages_estudios_y_referencias_path%>
+              </li>
+
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Cómo empezar? <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <%=link_to "Edad y requisitos", pages_edad_para_empezar_blw_path%>
+              </li>
+              <li>
+                <%=link_to "Guía para comenzar", pages_guia_para_empezar_blw_path%>
+              </li>
+              <li>
+                <%=link_to "Tipo de comida", pages_tipo_de_comida_blw_path%>
+              </li>
+              <li>
+                <%=link_to "BLW Tips", pages_blw_tips_path%>
+              </li>
+              <li>
+                <%=link_to "Recetas", pages_recetas_path%>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seguridad <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <%=link_to "Reglas de Seguridad", pages_seguridad_path%>
+              </li>
+              <li>
+                <%=link_to "Ahogamiento", pages_ahogamiento_path%>
+              </li>
+              <li>
+                <%=link_to "Primeros Auxilios", pages_primeros_auxilios_path%>
+              </li>
+              <li>
+                <%=link_to "Alimentos a Evitar", pages_alimentos_peligrosos_path%>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nutrición <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <%=link_to "Nutrición", pages_nutricion_path%>
+              </li>
+              <li>
+                <%=link_to "Hierro", pages_hierro_path%>
+              </li>
+              <li>
+                <%=link_to "Cantidades", pages_cantidades_path%>
+              </li>
+              <li>
+                <%=link_to "Alergias", pages_alergias_path%>
+              </li>
+            </ul>
+          </li>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </form>
+        </ul>
       </div>
     </div>
-    <!-- ===================================== Regular Navbar =============================================== -->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" id='brand' href="/">BLW en Español</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <%=link_to "Inicio", root_path%>
-            </li>
-            <li class="dropdown">
-              <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Baby Led Weaning <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <%=link_to "Definición", pages_definicion_blw_path%>
-                </li>
-                <li>
-                  <%=link_to "Beneficios", pages_beneficios_blw_path%>
-                </li>
-                <li>
-                  <%=link_to "Bebés de botella", pages_botella_path%>
-                </li>
-                <li>
-                  <%=link_to "Mitos de BLW", pages_mitos_blw_path%>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li>
-                  <%=link_to "Consejos para todos", pages_consejos_para_todos_path%>
-                </li>
-                <li>
-                  <%=link_to "Cuando no hacer BLW", pages_cuando_no_hacer_blw_path%>
-                </li>
-                <li>
-                  <%=link_to "Estudios y referencias", pages_estudios_y_referencias_path%>
-                </li>
-
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Cómo empezar? <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <%=link_to "Edad y requisitos", pages_edad_para_empezar_blw_path%>
-                </li>
-                <li>
-                  <%=link_to "Guía para comenzar", pages_guia_para_empezar_blw_path%>
-                </li>
-                <li>
-                  <%=link_to "Tipo de comida", pages_tipo_de_comida_blw_path%>
-                </li>
-                <li>
-                  <%=link_to "BLW Tips", pages_blw_tips_path%>
-                </li>
-                <li>
-                  <%=link_to "Recetas", pages_recetas_path%>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seguridad <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <%=link_to "Reglas de Seguridad", pages_seguridad_path%>
-                </li>
-                <li>
-                  <%=link_to "Ahogamiento", pages_ahogamiento_path%>
-                </li>
-                <li>
-                  <%=link_to "Primeros Auxilios", pages_primeros_auxilios_path%>
-                </li>
-                <li>
-                  <%=link_to "Alimentos a Evitar", pages_alimentos_peligrosos_path%>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="navbar-links" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nutrición <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <%=link_to "Nutrición", pages_nutricion_path%>
-                </li>
-                <li>
-                  <%=link_to "Hierro", pages_hierro_path%>
-                </li>
-                <li>
-                  <%=link_to "Cantidades", pages_cantidades_path%>
-                </li>
-                <li>
-                  <%=link_to "Alergias", pages_alergias_path%>
-                </li>
-              </ul>
-            </li>
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Buscar">
-              </div>
-              <button type="submit" class="btn btn-default">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              </button>
-            </form>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  </nav>
   </div>
   </div>
 
@@ -182,18 +182,22 @@
   <script async src="https://static.addtoany.com/menu/page.js"></script>
   <!-- AddToAny END -->
 
+  <% flash.each do |key, value| %>
+    <%=content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+
   <%=yield %>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2015 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </div>
-    </footer>
+          <!-- FOOTER -->
+          <footer>
+            <div class="container">
+              <p class="pull-right"><a href="#">Back to top</a></p>
+              <p>© 2015 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+            </div>
+          </footer>
 
-    </div>
-    <!-- /.container -->
+          </div>
+          <!-- /.container -->
 </body>
 
 </html>
