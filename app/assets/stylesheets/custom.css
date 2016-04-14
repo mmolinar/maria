@@ -157,6 +157,7 @@ a:active{
 .container .jumbotron .content{
     padding-top: 8px;
     padding-bottom: 20px;
+    -moz-text-align-last: left;
 }
 
 .container .jumbotron .content{
@@ -170,6 +171,7 @@ a:active{
 
 .container .jumbotron{
   padding-top: 15px;
+  -moz-text-align-last: left;
 }
 
 .container .list-group-item.active{
