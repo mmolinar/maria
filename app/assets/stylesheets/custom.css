@@ -164,7 +164,7 @@ a:active{
     padding-left: 95px;
     padding-right: 105px;
     text-align: justify;
-    -moz-text-align-last: center;
+    -moz-text-align-last: left;
     text-align-last: left;
 }
 
