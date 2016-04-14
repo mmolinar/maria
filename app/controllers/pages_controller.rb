@@ -79,4 +79,7 @@ class PagesController < ApplicationController
   
   def recetas
   end
+  
+  def fotos
+  end
 end

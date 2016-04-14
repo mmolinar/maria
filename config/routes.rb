@@ -53,6 +53,8 @@ Rails.application.routes.draw do
   
   get 'pages/recetas' => 'pages#recetas'
   
+  get 'pages/fotos' => 'pages#fotos'
+  
   root 'pages#home'
   
   #Contact form
