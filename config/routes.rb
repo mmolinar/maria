@@ -55,6 +55,14 @@ Rails.application.routes.draw do
   
   get 'pages/fotos' => 'pages#fotos'
   
+  get 'pages/lista_alimentos_energeticos' => 'pages#lista_alimentos_energeticos'
+  
+  get 'pages/lista_alimentos_hierro' => 'pages#lista_alimentos_hierro'
+  
+  get 'pages/lista_alimentos_peligrosos' => 'pages#lista_alimentos_peligrosos'
+
+  get 'pages/lista_primeros_alimentos' => 'pages#lista_primeros_alimentos'
+
   root 'pages#home'
   
   #Contact form

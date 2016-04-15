@@ -82,4 +82,16 @@ class PagesController < ApplicationController
   
   def fotos
   end
+  
+  def lista_alimentos_hierro
+  end
+  
+  def lista_alimentos_energeticos
+  end
+  
+  def lista_alimentos_peligrosos
+  end
+  
+  def lista_primeros_alimentos
+  end
 end
