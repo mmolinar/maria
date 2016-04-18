@@ -174,6 +174,19 @@ th {
     color: white;
 }
 
+/*=================== Make images nice in Fotos ============================ */
+.images {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+.images li {
+  list-style:none;
+  margin-bottom:25px;
+}
+.images li img {
+  cursor: pointer;
+}
+
 /*================ Mobile Media Queries for responsive css =================*/
 /* Custom, iPhone Retina */
 //	@media only screen and (min-width : 34em){
