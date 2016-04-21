@@ -17,7 +17,7 @@ class ContactsController < ApplicationController
       redirect_to new_contact_path
     else
       flash[:danger] = 'Oops! ¿Te falto algo? Trata de nuevo.'
-      redirect_to new_contact_path\
+      redirect_to new_contact_path
     end
   end
   
