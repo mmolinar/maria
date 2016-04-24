@@ -1,11 +1,15 @@
 <div class="container">
     <div class="jumbotron vertical-center">
-        <div class="container content">
+        <div class="container content" >
+            <h1 id="CenterH1" >Contacto</h1>
+                    <p>¡Si tienes preguntas, quieres compartir recetas o te gustaría que la 
+             foto de tu bebé aparezca en la sección de <%=link_to "Fotos", pages_fotos_path%> envía tu mail!</p>
+             <br>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <h1 class="entry-title">Contacto</h1>
+                    
                     <div class="well">
-                        <%=form_for @contact do |f| %>
+                        <%=form_for @contact, html: { multipart: true } do |f| %>
                             <div class="form-group">
                                 <%=f.label :nombre %>
                                     <%=f.text_field :name, class: 'form-control' %>
@@ -19,6 +23,10 @@
                             <div class="form-group">
                                 <%=f.label :commentario %>
                                     <%=f.text_area :comments, class: 'form-control' %>
+                            </div>
+                            <div class="form-group">
+                                <%=f.label :imagen %>
+                                    <%=f.file_field :image, class: 'form-control' %>
                             </div>
                             <%=f.submit 'Enviar', class: 'btn btn-default' %>
                                 <% end %>
