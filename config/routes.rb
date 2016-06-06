@@ -62,6 +62,8 @@ Rails.application.routes.draw do
   get 'pages/lista_alimentos_peligrosos' => 'pages#lista_alimentos_peligrosos'
 
   get 'pages/lista_primeros_alimentos' => 'pages#lista_primeros_alimentos'
+  
+  get 'pages/aviso_legal' => 'pages#aviso_legal'
 
   root 'pages#home'
   

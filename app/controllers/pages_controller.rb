@@ -94,4 +94,7 @@ class PagesController < ApplicationController
   
   def lista_primeros_alimentos
   end
+  
+  def aviso_legal
+  end
 end
