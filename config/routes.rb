@@ -64,8 +64,11 @@ Rails.application.routes.draw do
   get 'pages/lista_primeros_alimentos' => 'pages#lista_primeros_alimentos'
   
   get 'pages/aviso_legal' => 'pages#aviso_legal'
+  
+  get 'pages/ideas' => 'pages#ideas'
 
   root 'pages#home'
+end
   
   #Contact form
   #\\\\resources "contacts", only: [:new, :create]
@@ -124,4 +127,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
