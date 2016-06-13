@@ -66,6 +66,8 @@ Rails.application.routes.draw do
   get 'pages/aviso_legal' => 'pages#aviso_legal'
   
   get 'pages/ideas' => 'pages#ideas'
+  
+  get 'pages/mac_and_cheese' => 'pages#mac_and_cheese'
 
   root 'pages#home'
 end

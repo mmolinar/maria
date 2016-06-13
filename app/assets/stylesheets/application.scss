@@ -200,6 +200,24 @@ th {
   position: relative;
   left: 35%;
 }
+
+/*Images with description in Ideas page*/
+.Thumbnail
+{
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.Thumbnail-left
+{
+  float: right;
+  margin: 10px 0 0 10px;
+}
+
+/*.jumbotron .container .ingredients
+{
+  text-align: center;
+}*/
 /*================ Mobile Media Queries for responsive css =================*/
 /* Custom, iPhone Retina */
 //	@media only screen and (min-width : 34em){
