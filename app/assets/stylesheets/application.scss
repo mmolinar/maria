@@ -214,6 +214,15 @@ th {
   margin: 10px 0 0 10px;
 }
 
+/*Align hierro avatar on same line as H1*/
+.h1pic img {
+  float: right;
+}
+
+.h1pic h1 {
+  position: relative;
+}
+
 /*.jumbotron .container .ingredients
 {
   text-align: center;
