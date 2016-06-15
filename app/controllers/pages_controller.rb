@@ -103,4 +103,7 @@ end
 
 def mac_and_cheese
 end
+
+def ratatouille
+end
 end
