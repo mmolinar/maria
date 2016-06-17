@@ -106,4 +106,7 @@ end
 
 def ratatouille
 end
+
+def trufas_cocoa
+end
 end
