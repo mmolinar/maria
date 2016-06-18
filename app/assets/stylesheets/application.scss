@@ -144,6 +144,19 @@ a:hover{
     .a2a_floating_style.a2a_vertical_style { display: none; }
 }
 
+@media screen and (min-width:320px){
+    .center-pills .nav-text{
+        font-size:10px;
+        font-family: 'Roboto Slab', sans-serif;
+    }  
+}
+
+@media screen and (min-width:480px){
+    .center-pills .nav-text{
+        font-size:14px;
+    }  
+}
+
 /*Justifies content (nicely squared) */
 .container .jumbotron .content{
     text-align: left;
