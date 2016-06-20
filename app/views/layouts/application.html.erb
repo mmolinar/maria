@@ -11,6 +11,7 @@
   <%=stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
     <%=javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
       <%=csrf_meta_tags %>
+      <%= render partial: "partials/google_analytics" %>
 </head>
 
 <body data-pinterest-extension-installed="cr1.39.1">
@@ -236,6 +237,8 @@
 
           </div>
           <!-- /.container -->
+          <%= render partial: "partials/google_analytics_pageview" %>
 </body>
+
 
 </html>
