@@ -109,4 +109,7 @@ end
 
 def trufas_cocoa
 end
+
+def muffins_platano
+end
 end

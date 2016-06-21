@@ -72,6 +72,8 @@ Rails.application.routes.draw do
   get 'pages/ratatouille' => 'pages#ratatouille'
   
   get 'pages/trufas_cocoa' => 'pages#trufas_cocoa'
+  
+  get 'pages/muffins_platano' => 'pages#muffins_platano'
 
   root 'pages#home'
 end
