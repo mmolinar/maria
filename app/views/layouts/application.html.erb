@@ -11,11 +11,12 @@
   <%=stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
     <%=javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
       <%=csrf_meta_tags %>
-      <%= render partial: "partials/google_analytics" %>
+        <%= render partial: "partials/google_analytics" %>
 </head>
 
 <body data-pinterest-extension-installed="cr1.39.1">
- <!-- <div id="fb-root"></div>
+  <!-- FACEBOOK COMMENTS-->
+  <div id="fb-root"></div>
   <script>
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,7 +54,7 @@
     </div>
   </div>
   <!-- ===================================== Regular Navbar =============================================== -->
- <!--<div id="navbar" class="navbar-collapse collapse">-->
+  <!--<div id="navbar" class="navbar-collapse collapse">-->
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
@@ -201,7 +202,7 @@
   <!-- ============== AddToAny Social Media Buttons BEGIN =================== -->
   <div class="container">
     <!--<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="margin-left:-100px; top:150px;">-->
-    <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+    <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="right:0px; top:150px;">
       <!-- <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:20px; top:150px;">
       <!--<a class="a2a_dd" href="https://www.addtoany.com/share"></a>-->
       <a class="a2a_button_facebook"></a>
@@ -222,18 +223,18 @@
       <% end %>
 
         <%=yield %>
-         <!-- <div class="container">
+          <!--FACEBOOK comments yield-->
+          <div class="container">
             <div class="jumbotron vertical-center">
-              <div class="fb-comments" data-href="http://www.blwenespanol.com" data-width="950" data-numposts="5"></div>
+              <div class="fb-comments" data-href="http://www.blwenespanol.com" data-adapt-container-width="true" data-numposts="5"></div>
             </div>
-          </div>
-          <!-- FOOTER -->
-          <footer>
-            <div class="container">
-              <p class="pull-right"><a href="#">Back to top</a></p>
-              <p>© 2015 Company, Inc. · <a href="/contacts/new">Contacto</a> · <a href="/pages/aviso_legal">Aviso Legal</a></p>
-            </div>
-          </footer>
+            <!-- FOOTER -->
+            <footer>
+              <div class="container">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>© 2015 Company, Inc. · <a href="/contacts/new">Contacto</a> · <a href="/pages/aviso_legal">Aviso Legal</a></p>
+              </div>
+            </footer>
 
           </div>
           <!-- /.container -->

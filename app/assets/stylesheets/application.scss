@@ -139,9 +139,22 @@ a:hover{
   text-align: center;
 }
 
-/* Doesnt seem to work Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
-@media screen and (max-width: 680px) {
-    .a2a_floating_style.a2a_vertical_style { display: none; }
+/*Hide AddToAny vertical share bar when screen is less than 980 pixels wide. Commented out bc I want to display on every screen size
+@media screen and (max-width: 300px) {
+    .a2a_floating_style .a2a_vertical_style { display: none; }
+}*/
+
+@media screen and (min-width:320px){
+    .center-pills .nav-text{
+        font-size:10px;
+        font-family: 'Roboto Slab', sans-serif;
+    }  
+}
+
+@media screen and (min-width:480px){
+    .center-pills .nav-text{
+        font-size:14px;
+    }  
 }
 
 @media screen and (min-width:320px){
