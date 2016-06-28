@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+
   resources :contacts
+  
+  get 'pages', to: redirect('/')
   
   get 'pages/about' => 'pages#about'
 
