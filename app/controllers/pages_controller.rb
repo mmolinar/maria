@@ -115,4 +115,7 @@ end
 
 def pure_datiles
 end
+
+def carne_borgona
+end
 end
