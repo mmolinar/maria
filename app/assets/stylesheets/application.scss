@@ -11,9 +11,9 @@
  * file per style scope.
  *
  */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 .container .jumbotron p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -22,50 +22,60 @@
   line-height: 1.25;
 }
 
+
 /*Makes text background white*/
-.container .jumbotron{
-   background: #ffffff; 
+
+.container .jumbotron {
+  background: #ffffff;
 }
 
-.cont{
-    background-color: #f8f8f8;
-    width: 100%;
+.cont {
+  background-color: #f8f8f8;
+  width: 100%;
 }
 
-.cont .container{
-    background-color: #f8f8f8;    
+.cont .container {
+  background-color: #f8f8f8;
 }
+
 
 /*H1 titles*/
-.jumbotron .entry-title{
-    margin-bottom: 15px;
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0 0 25px;
-    text-align: left;
+
+.jumbotron .entry-title {
+  margin-bottom: 15px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 25px;
+  text-align: left;
 }
 
+
 /*No space between Navbar and Carousel*/
-.navbar{
+
+.navbar {
   margin-bottom: 0px;
 }
 
-.jumbotron h2{
+.jumbotron h2 {
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 10px;
   font-family: 'Roboto Slab', sans-serif;
 }
 
+
 /*H3*/
+
 .entry-content {
-    font-family: 'Roboto Slab', sans-serif;
-    text-transform: uppercase;
+  font-family: 'Roboto Slab', sans-serif;
+  text-transform: uppercase;
 }
 
+
 /*Navbar font*/
-.navbar-default { 
+
+.navbar-default {
   /*font-size: 16px;*/
   font-size: 1.6rem;
   font-family: 'Roboto Slab', serif;
@@ -73,60 +83,85 @@
   color: #ffffff;
 }
 
+
 /*Nav Pill font (about, tienda etc)*/
-.nav-pills{
+
+.nav-pills {
   font-size: 18px;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
 }
 
+
 /*BLW en Espanol font color*/
-#brand{
+
+#brand {
   font-size: 26px;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  color: #eb7200; /*orange  123*/
+  color: #eb7200;
+  /*orange  123*/
   /*line-height: 1.2;*/
 }
 
-.nav-pills a:link, .nav-pills a:visited, .nav-pills a:hover, .nav-pills a:active{
-  color: #70548b; /*purple*/
+.nav-pills a:link,
+.nav-pills a:visited,
+.nav-pills a:hover,
+.nav-pills a:active {
+  color: #70548b;
+  /*purple*/
   font-weight: 700;
 }
 
+
 /*Leer button stays white*/
-#myCarousel a:link, #myCarousel a:visited, #myCarousel a:hover, #myCarousel a:active{ 
-    text-decoration: none; 
-    color: #ffffff;
+
+#myCarousel a:link,
+#myCarousel a:visited,
+#myCarousel a:hover,
+#myCarousel a:active {
+  text-decoration: none;
+  color: #ffffff;
 }
+
 
 /*View details in Marketing is gray*/
-.col-lg-4 a:link, .col-lg-4 a:visited{ 
-    text-decoration: none; 
-    color: #777;
+
+.col-lg-4 a:link,
+.col-lg-4 a:visited {
+  text-decoration: none;
+  color: #777;
 }
 
+
 /*View details in Marketing is blue when hover*/
-.col-lg-4 a:hover{ 
-  color: #337ab7;/*blue*/
+
+.col-lg-4 a:hover {
+  color: #337ab7;
+  /*blue*/
 }
 
 
 /*Mute the second title of featurettes*/
-.col-md-7 .featurette-heading a:link, .col-md-7 .featurette-heading a:visited, .col-md-7 .featurette-heading a:hover, .col-md-7 .featurette-heading a:active{ 
-    text-decoration: none; 
-    color: #777;
-}
 
-a:visited{
-  color: #eb7200; /*orange*/
-}
-
-a:hover{
+.col-md-7 .featurette-heading a:link,
+.col-md-7 .featurette-heading a:visited,
+.col-md-7 .featurette-heading a:hover,
+.col-md-7 .featurette-heading a:active {
+  text-decoration: none;
   color: #777;
 }
 
-.onceUpon{
+a:visited {
+  color: #eb7200;
+  /*orange*/
+}
+
+a:hover {
+  color: #777;
+}
+
+.onceUpon {
   font-weight: bold;
 }
 
@@ -135,75 +170,133 @@ a:hover{
   padding-bottom: 50px;
 }
 
-#videoCarlosTed{
+#videoCarlosTed {
   text-align: center;
 }
+
+
+/*For Recipes css*/
+.recipe {
+	background: white;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	.image_wrapper {
+		max-width: 100%;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+	}
+	img {
+		width: 100%;
+		-webkit-transition: all .3s ease-out;
+	  -moz-transition: all .3s ease-out;
+	  -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+		&:hover {
+			transform: scale(1.075);
+		}
+	}
+}
+
+#recipe_top {
+	margin-bottom: 50px;
+}
+
+#recipe_info, #ingredients, #directions {
+	background: #f8f8f8;
+	min-height: 360px;
+	border-radius: 5px;
+	padding: 2em 8%;
+}
+
+.recipe_image {
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+#ingredients, #directions {
+	margin-bottom: 50px;
+	ul, ol {
+		padding-left: 18px;
+		li {
+			padding: 1em 0;
+			border-bottom: 1px solid #EAEAEA;
+		}
+	}
+}
+
+/*For recipes forms*/
+.form-inline {
+	margin-top: 15px;
+}
+.form-input {
+	width: 65% !important;
+	float: left;
+}
+.form-button {
+	float: left;
+	width: 30% !important;
+	margin-left: 5%;
+}
+.add-button {
+	margin-top: 25px;
+}
+
 
 /*Hide AddToAny vertical share bar when screen is less than 980 pixels wide. Commented out bc I want to display on every screen size
 @media screen and (max-width: 300px) {
     .a2a_floating_style .a2a_vertical_style { display: none; }
 }*/
-
-@media screen and (min-width:320px){
-    .center-pills .nav-text{
-        font-size:10px;
-        font-family: 'Roboto Slab', sans-serif;
-    }  
+@media screen and (min-width:320px) {
+  .center-pills .nav-text {
+    font-size: 10px;
+    font-family: 'Roboto Slab', sans-serif;
+  }
 }
-
-@media screen and (min-width:480px){
-    .center-pills .nav-text{
-        font-size:14px;
-    }  
+@media screen and (min-width:480px) {
+  .center-pills .nav-text {
+    font-size: 14px;
+  }
 }
-
-@media screen and (min-width:320px){
-    .center-pills .nav-text{
-        font-size:10px;
-        font-family: 'Roboto Slab', sans-serif;
-    }  
+@media screen and (min-width:320px) {
+  .center-pills .nav-text {
+    font-size: 10px;
+    font-family: 'Roboto Slab', sans-serif;
+  }
 }
-
-@media screen and (min-width:480px){
-    .center-pills .nav-text{
-        font-size:14px;
-    }  
+@media screen and (min-width:480px) {
+  .center-pills .nav-text {
+    font-size: 14px;
+  }
 }
 
 /*Justifies content (nicely squared) */
-.container .jumbotron .content{
-    text-align: left;
-    -moz-text-align-last: left;
-    text-align-last: left;
+.container .jumbotron .content {
+  text-align: left;
+  -moz-text-align-last: left;
+  text-align-last: left;
 }
-
-.quoteContent{
+.quoteContent {
   font-style: italic;
 }
-
-.quotes{
+.quotes {
   font-size: 150%;
 }
-
-.circles{
+.circles {
   text-align: center;
 }
 
 /*Center Video of TEDXValencia*/
 .center {
-    margin: 0 auto;
-    width: 80%;
+  margin: 0 auto;
+  width: 80%;
 }
-
 th {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4CAF50;
+  color: white;
 }
-
 .PhotoCred {
   text-align: center;
 }
-
 .imageText {
   float: left;
   margin-right: 20px;
@@ -217,7 +310,7 @@ th {
 }
 
 /*Center h1 heading in Contact*/
-#CenterH1{
+#CenterH1 {
   text-align: center;
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
@@ -228,14 +321,11 @@ th {
 }
 
 /*Images with description in Ideas page*/
-.Thumbnail
-{
+.Thumbnail {
   float: left;
   margin: 0 10px 0 0;
 }
-
-.Thumbnail-left
-{
+.Thumbnail-left {
   float: right;
   margin: 10px 0 0 10px;
 }
@@ -244,7 +334,6 @@ th {
 .h1pic img {
   float: right;
 }
-
 .h1pic h1 {
   position: relative;
 }
@@ -253,30 +342,27 @@ th {
 {
   text-align: center;
 }*/
+
 /*================ Mobile Media Queries for responsive css =================*/
+
 /* Custom, iPhone Retina */
 //	@media only screen and (min-width : 34em){
-   
 //	}
- 
-	/* Extra Small Devices, Phones */
+
+/* Extra Small Devices, Phones */
 //	@media only screen and (min-width : 48em){
- 
 //	}
- 
-	/* Small Devices, Tablets */
+
+/* Small Devices, Tablets */
 //	@media only screen and (min-width : 62em){
- 
 //	}
- 
-	/* Medium Devices, Desktops */
+
+/* Medium Devices, Desktops */
 //	@media only screen and (min-width : 75em){
- 
 //	}
- 
-	/* Large Devices, Wide Screens */
+
+/* Large Devices, Wide Screens */
 //	@media only screen and (min-width : 1200px){
- 
 //	}
 
 /* CUSTOMIZE THE CAROUSEL without this the carousel is deformed
@@ -287,6 +373,7 @@ th {
   // height: 500px;
   margin-bottom: 60px;
 }
+
 /* Since positioning the image, we need to help out the caption */
 // .carousel-caption {
 //   z-index: 10;
@@ -294,52 +381,6 @@ th {
 
 /*Declare heights because of positioning of img element */
 .carousel .item {
-//   height: 500px;
-background-color: #777;
- }
-// .carousel-inner > .item > img {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 500px;
-//   object-fit: contain;
-// }
-
-/*
-.item img {
-    width: 100%;
-    height: auto;
-  }
-
-/*
-.carousel img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: none;
+  //   height: 500px;
+  background-color: #777;
 }
-/*
-img {
-        height: 100px;
-        width: 100px;
-        object-fit: contain;
-}*/
-
-/*
-img {
-        height: 100px;
-        width: 100px;
-        object-fit: contain;
-}*/
-
-/*.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}*/
-

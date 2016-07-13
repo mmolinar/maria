@@ -2,7 +2,11 @@ Rails.application.routes.draw do
 
   resources :contacts
   
-  get 'pages', to: redirect('/')
+  resources :recipes
+  
+  get '/recipes' => 'recipes#index'
+  
+  #get 'pages', to: redirect('/')
   
   get 'pages/about' => 'pages#about'
 
