@@ -178,13 +178,13 @@ a:hover {
 /*For Recipes css*/
 .recipe {
 	background: white;
-	border-radius: 5px;
+	/*border-radius: 5px;
 	margin-bottom: 40px;
-	.image_wrapper {
+	/*.image_wrapper {
 		max-width: 100%;
-		border-radius: 5px 5px 0 0;
+		/*border-radius: 5px 5px 0 0;
 		overflow: hidden;
-	}
+	}*/
 	img {
 		width: 100%;
 		-webkit-transition: all .3s ease-out;
@@ -257,17 +257,7 @@ a:hover {
     font-size: 14px;
   }
 }
-@media screen and (min-width:320px) {
-  .center-pills .nav-text {
-    font-size: 10px;
-    font-family: 'Roboto Slab', sans-serif;
-  }
-}
-@media screen and (min-width:480px) {
-  .center-pills .nav-text {
-    font-size: 14px;
-  }
-}
+
 
 /*Justifies content (nicely squared) */
 .container .jumbotron .content {
