@@ -83,6 +83,8 @@ Rails.application.routes.draw do
   get 'pages/carne_borgona' => 'pages#carne_borgona'
   
   get 'pages/agua_de_sabor' => 'pages#agua_de_sabor'
+  
+  get 'pages/hachis_parmentier' => 'pages#hachis_parmentier'
 
   root 'pages#home'
 end
