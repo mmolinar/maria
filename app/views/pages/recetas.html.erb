@@ -1,53 +1,86 @@
 <div class="container">
     <div class="jumbotron vertical-center">
         <div class="container content">
-            <h1 class="entry-title">Recetas</h1>
-            </br>
-            <div>
-                <img src="/assets/Recetas.jpg" class="img-fluid img-responsive center-block" alt="Responsive image">
-            </div>
-            <br>
-            <p><b>Aquí hay algunas recetas deliciosas, fáciles y nutritivas para compartir 
-            con tu bebé y toda la familia.</b> Estaremos subiendo nuevas recetas continuamente.</p>
+            <h1>Recetas</h1>
             <p>
-                Este sitio fue creado para dar información acerca de baby led weaning (BLW), una forma de alimentación 
-                complementaria. Las recetas que encuentres aquí son las que han pasado a ser favorita. </p>
-                <p>Pero ni soy chef 
-                profesional ni fotógrafa profesional. Sólo una mamá que quiere compartir unas recetas nutritivas y fáciles de 
-                hacer. Ese es el propósito de estas recetas. Cocino y tomo 
-                fotos mientras personitas impacientes revolotean a mi alrededor entonces a veces puede ser que me falte una foto o esté borrosa. 
-                Pero ustedes saben como es eso ;)
+                Este sitio fue creado para dar información acerca de baby led weaning (BLW), una forma de alimentación complementaria. Las recetas que encuentres aquí son las que han pasado a ser favoritas. </p>
+            <p>No soy ni chef ni fotógrafa profesional. Sólo una mamá que quiere compartir unas recetas nutritivas y fáciles de hacer. Ese es el propósito de estas recetas. Cocino y tomo fotos mientras personitas impacientes revolotean a mi alrededor entonces
+                a veces puede ser que me falte una foto o esté borrosa. Pero ustedes saben como es eso ;)
             </p>
             <p>¡Visítanos próximamente o deja tu <a href="/contacts/new">email</a> para recibir las nuevas recetas en tu buzón!</p>
-            <div>
-                <h3><b>Desayuno</b></h3></div>
-            <p>
-
-            </p>
-            <div>
-                <h3><b>Comida/Cena</b></h3></div>
-    
-            <p>
-                <b><%=link_to "Muffins de Macaroni and Cheese", pages_mac_and_cheese_path%></b>. Pasta con queso. Esta receta además tiene huevo y avena lo que la hace alta en hierro.
-            </p>
-            <p>
-                <b><%= link_to "Ratatouille", pages_ratatouille_path%></b>. Pimientos rojos, berenjena y calabacita. La receta francesa es deliciosa y sumamente nutritiva.
-            </p>
-            <p>
-                <b><%= link_to "Boeuf Bourguignon", pages_carne_borgona_path%></b>. Carne, papas y zanahorias, excelente fuente de hierro en una salsa deliciosa. Otro clásico platillo francés.  
-            </p>
-            <div>
-                <h3><b>Snacks</b></h3></div>
-            <p>
-                <b><%= link_to "Trufas de Cocoa y Almendras", pages_trufas_cocoa_path%></b>. ¡Absolutamente deliciosas! Trufas de chocolate sumamente nutritivas con mucho hierro.
-            </p>
-            <p><b><%= link_to "Muffins de Plátano", pages_muffins_platano_path%></b>. Plátano, huevo, harina y puré de dátiles. Muffins sin azúcar que seguramente les van a encantar.</p>
-            <p>
-                <b><%= link_to "Puré de dátiles", pages_pure_datiles_path%></b>. Los dátiles son una maravilla nutricional. Puedes usarla para remplazar azúcar algunas recetas o untarla en pan. 
-            </p>
-            <p>
-                <b><%= link_to "Agua de sabor", pages_agua_de_sabor_path%></b>. Una alterntiva más sana que el jugo (no recomendados) y diferente al agua. Experimenta con diferentes frutas. 
-            </p>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/mac_and_cheese">
+                                <img src="/assets/Recetas/Mac 6.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Muffins Mac&Cheese", pages_mac_and_cheese_path %></h3>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/trufas_cocoa">
+                                <img src="/assets/Recetas/Trufas 4.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Trufas Cocoa y Almendras", pages_trufas_cocoa_path%></h3>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/mac_and_cheese">
+                                <img src="/assets/Recetas/Pure datiles 5.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Puré de dátiles", pages_pure_datiles_path%></h3>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/muffins_platano">
+                                <img src="/assets/Recetas/Platano 8.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Muffins de Plátano", pages_muffins_platano_path%></h3>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/agua_de_sabor">
+                                <img src="/assets/Recetas/Agua 4.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Agua de sabor", pages_agua_de_sabor_path%></h3>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/carne_borgona">
+                                <img src="/assets/Recetas/Boeuf Bourg 8.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Boeuf Bourguignon", pages_carne_borgona_path%></h3>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="recipe">
+                        <div class="image_wrapper">
+                            <a href="/pages/ratatouille">
+                                <img src="/assets/Recetas/Ratatouille 3.jpg" class="img-fluid img-responsive Thumbnail-left" alt="Responsive image">
+                            </a>
+                        </div>
+                        <h3><%= link_to "Ratatouille", pages_ratatouille_path%></h3>
+                    </div>
+                </div>
+               
+            </div>
         </div>
     </div>
 </div>
