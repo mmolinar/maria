@@ -124,4 +124,7 @@ end
 
 def hachis_parmentier
 end
+
+def muffins_calabacita
+end
 end
