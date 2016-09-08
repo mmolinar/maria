@@ -130,4 +130,7 @@ end
 
 def introduccion_de_sabores
 end
+
+def tortitas_de_garbanzo
+end
 end
