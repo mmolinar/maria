@@ -133,4 +133,7 @@ end
 
 def tortitas_de_garbanzo
 end
+
+def salsas_sencillas
+end
 end
