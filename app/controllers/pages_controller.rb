@@ -136,4 +136,7 @@ end
 
 def salsas_sencillas
 end
+
+def croquetas_atun
+end
 end
