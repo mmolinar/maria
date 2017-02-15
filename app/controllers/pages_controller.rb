@@ -139,4 +139,10 @@ end
 
 def croquetas_atun
 end
+
+def chicken_pot_pie
+end
+
+def super_hamburguesitas
+end
 end
