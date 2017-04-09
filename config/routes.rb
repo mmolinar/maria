@@ -99,6 +99,8 @@ Rails.application.routes.draw do
   get 'pages/chicken_pot_pie' => 'pages#chicken_pot_pie'
   
   get 'pages/super_hamburguesitas' => 'pages#super_hamburguesitas'
+  
+  get 'pages/risotto_berenjena' => 'pages#risotto_berenjena'
 
   root 'pages#home'
 end
